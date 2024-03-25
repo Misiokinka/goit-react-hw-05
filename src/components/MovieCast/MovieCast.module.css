@@ -1,0 +1,52 @@
+.movieCastList {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 14px;
+    row-gap: 25px;
+    padding: 0;
+
+}
+
+.movieCastItem {
+    display: flex;
+    width: 20%;
+    gap: 10px;
+    border: 2px solid;
+}
+
+.movieCastImg {
+    width: 136px;
+    height: 200px;
+
+}
+
+.castInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 10px;
+    gap: 15px;
+
+
+
+}
+
+.movieCastName {
+    font-size: 25px;
+    font-weight: 400;
+    color: #d3d3d3;
+    margin: 0;
+    margin-top: 45px;
+    text-align: center;
+
+}
+
+.movieCastCharacter {
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+
+}

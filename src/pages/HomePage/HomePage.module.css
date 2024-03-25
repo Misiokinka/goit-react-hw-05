@@ -1,0 +1,12 @@
+.homePageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.homePageTitle {
+    color: #d3d3d3;
+    padding-top: 55px;
+    margin-bottom: 0;
+}

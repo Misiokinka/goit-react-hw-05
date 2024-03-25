@@ -1,0 +1,39 @@
+.movieReviewDescription {
+    display: flex;
+    justify-content: center;
+}
+
+.movieAuthorReview {
+    color: #d3d3d3;
+    margin: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 27px;
+}
+
+.movieTextReview {
+
+    font-size: 20px;
+    padding: 0 15px;
+    text-align: center;
+
+}
+
+.movieTextNotFound {
+    font-size: 20px;
+
+}
+
+.movieReviewInfoList {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+}
+
+.movieReviewInfoItem {
+
+    border: 2px solid;
+}

@@ -1,0 +1,32 @@
+.movieList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0;
+    padding: 15px 50px;
+
+}
+
+.movieLink {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.movieLink:active {
+    background: #265301;
+    color: black;
+}
+
+.movieLink:visited {
+    color: aqua;
+    ;
+}
+
+.movieLink:hover {
+    color: black;
+    background: #cdfeaa;
+}

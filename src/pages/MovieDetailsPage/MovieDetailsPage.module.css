@@ -1,0 +1,83 @@
+.movieDetailsWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 85px 25px;
+    padding-bottom: 15px;
+}
+
+.movieDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 25px;
+}
+
+
+.movieDescriptionTitle {
+    color: #d3d3d3;
+    margin: 0;
+    margin-top: 35px;
+}
+
+.movieDescriptionOverview,
+.movieDescriptionGeners {
+    color: #d3d3d3;
+    margin: 0;
+}
+
+.movieDescriptionOverviewText {
+    width: 60%;
+    margin: 0;
+}
+
+.additionalInfoMovie {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.additionalMovieText {
+    color: #d3d3d3;
+}
+
+.additionalMovieLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.posterMovieImg {
+    width: 350px;
+}
+
+.genresList {
+    display: flex;
+    gap: 9px;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+}
+
+.additionalInfoMovieWrapper {
+    display: flex;
+
+
+}
+
+
+.movieDetailsLink {
+
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    color: white;
+    margin-left: 25px;
+    font-weight: 400;
+}
+
+.active {
+    color: #20bcc6;
+    font-size: 23px;
+    font-weight: 400;
+}
