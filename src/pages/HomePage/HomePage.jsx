@@ -1,4 +1,6 @@
 import MovieList from "../../components/MovieList/MovieList";
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
+import Loader from '../../components/Loader/Loader';
 import { requestMovieTrending } from "../../services/api";
 import { useState, useEffect } from 'react'
 import css from "../../pages/HomePage/HomePage.module.css"
@@ -28,7 +30,11 @@ const HomePage = () => {
 
 
     return (
+
+
         <div className={css.homePageWrapper}>
+            {isError && <ErrorMessage />}
+            {isLoading && <Loader />}
             <h1 className={css.homePageTitle}>Movie Trending</h1>
             <MovieList movies={movies} />
         </div>

@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import { requestMovieCast } from "../../services/api";
 import css from "./MovieCast.module.css"
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import Loader from "../Loader/Loader";
 
 
 const MovieCast = () => {
@@ -31,7 +33,8 @@ const MovieCast = () => {
 
     return (
         <div className={css.movieCastWrapper}>
-
+            {isError && <ErrorMessage />}
+            {isLoading && <Loader />}
             {movie &&
                 <div className={css.movieCastDescription}>
                     <ul className={css.movieCastList}>

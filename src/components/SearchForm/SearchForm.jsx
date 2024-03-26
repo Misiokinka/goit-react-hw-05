@@ -8,6 +8,7 @@ const SearchForm = (props) => {
         <Formik initialValues={{ query: searchQuery ?? "" }}
             onSubmit={(values) => {
                 onSetSearchQuery(values.query);
+                
 
             }}>
 

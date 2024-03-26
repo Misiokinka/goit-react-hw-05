@@ -1,0 +1,27 @@
+.notFoundPageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFoundPageTitle {
+    margin-top: 130px;
+}
+
+.notFoundPageLink {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    color: white;
+}
+
+.notFoundPageText {
+    font-size: 18px;
+}
+
+.notFoundPageLink:hover {
+    color: black;
+    background: #cdfeaa;
+}

@@ -5,6 +5,8 @@ import css from "../../pages/MoviesPage/MoviesPage.module.css"
 import { requestMovieByQuery } from "../../services/api";
 import SearchForm from '../../components/SearchForm/SearchForm';
 import MovieList from '../../components/MovieList/MovieList';
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage';
+import Loader from '../../components/Loader/Loader';
 
 
 const MoviesPage = () => {
@@ -24,8 +26,9 @@ const MoviesPage = () => {
                 const data = await requestMovieByQuery(searchQuery);
 
                 setMovies(data.results);
+                setIsError(false);
             } catch (err) {
-                setIsError(true);
+                setIsError(true)
             } finally {
                 setIsLoading(false);
             }
@@ -39,7 +42,7 @@ const MoviesPage = () => {
 
     const onSetSearchQuery = (searchTerm) => {
         if (searchTerm.trim().length === 0) {
-            alert("Please enter a search term first!");
+            toast('Field cannot be empty')
             return;
         }
         setSearchParams({ query: searchTerm });
@@ -50,11 +53,26 @@ const MoviesPage = () => {
     return (
 
         <>
+            {isError && <ErrorMessage />}
+            {isLoading && <Loader />}
+
             <SearchForm
                 searchQuery={searchQuery}
                 onSetSearchQuery={onSetSearchQuery} />
             <MovieList movies={movies} />
-          
+            <Toaster
+                position="top-center"
+                reverseOrder={false}
+                gutter={8}
+                toastOptions={{
+                    className: '',
+                    duration: 5000,
+                    style: {
+                        background: '#363636',
+                        color: '#fff',
+
+                    }
+                }} />
         </>
     )
 }

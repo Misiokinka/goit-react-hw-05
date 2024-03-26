@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import { requestMovieReview } from "../../services/api";
 import css from "./MovieReviews.module.css"
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import Loader from "../Loader/Loader";
 
 
 const MovieReviews = () => {
@@ -31,6 +33,8 @@ const MovieReviews = () => {
     return (
 
         <div className={css.movieReviewDescription}>
+            {isError && <ErrorMessage />}
+            {isLoading && <Loader />}
 
             {movie.results && movie.results.length > 0 ? (
 
