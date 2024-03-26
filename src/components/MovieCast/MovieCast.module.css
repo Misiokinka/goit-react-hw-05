@@ -11,9 +11,10 @@
 
 .movieCastItem {
     display: flex;
-    width: 20%;
+    width: 23%;
     gap: 10px;
     border: 2px solid;
+    padding: 10px;
 }
 
 .movieCastImg {
@@ -34,7 +35,7 @@
 }
 
 .movieCastName {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 400;
     color: #d3d3d3;
     margin: 0;
@@ -44,7 +45,7 @@
 }
 
 .movieCastCharacter {
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 400;
     margin: 0;
     text-align: center;

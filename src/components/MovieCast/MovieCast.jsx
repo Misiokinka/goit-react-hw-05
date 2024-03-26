@@ -40,11 +40,13 @@ const MovieCast = () => {
                     <ul className={css.movieCastList}>
                         {movie.cast && movie.cast.map(cast => (
                             <li className={css.movieCastItem} key={cast.id}>
-                                {cast.profile_path ? (
-                                    <img className={css.movieCastImg} src={`https://image.tmdb.org/t/p/w500${cast.profile_path}`} alt="Actor Profile" />
-                                ) : (
-                                    <img className={css.movieCastImg} src="../../icon-image-not-found-free-vector.jpg" alt="Placeholder" />
-                                )}
+                                
+                                    {cast.profile_path ? (
+                                        <img className={css.movieCastImg} src={`https://image.tmdb.org/t/p/w500${cast.profile_path}`} alt="Actor Profile" />
+                                    ) : (
+                                        <img className={css.movieCastImg} src="https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg" alt="Placeholder" />
+                                    )}
+                              
                                 <div className={css.castInfo}>
                                     <p className={css.movieCastName}> {cast.name}</p>
                                     <p className={css.movieCastCharacter}>Character : {cast.character}</p>
